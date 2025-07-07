@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration=production && ng run AutoguardApp:server:production && ng run AutoguardApp:prerender",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:AutoguardApp": "node dist/autoguard-app/server/server.mjs"
