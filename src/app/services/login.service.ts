@@ -18,7 +18,7 @@ export class LoginService {
   }
 
   login(request: JwtRequest) {
-    return this.http.post('http://localhost:8082/login', request);
+    return this.http.post('https://trabajoarquiweb-latest.onrender.com/login', request);
   }
 
   verificar(): boolean {
